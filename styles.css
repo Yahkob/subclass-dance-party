@@ -25,3 +25,41 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+@-webkit-keyframes spin {
+  100% {-webkit-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes roll {
+  100% {-webkit-transform:rotate(-360deg);}
+}
+@-webkit-keyframes slide {
+  50% { left: 350px;}
+  50% { left: 0px;}
+}
+
+
+.spinner{
+  background-image: url(lisa.gif);
+  height:91px;
+  width:95px;
+  position:absolute;
+  -webkit-animation: spin 2s;
+}
+
+.spinner:hover {
+  /*background-image: url();*/
+  /*width:200px;
+  height:200px;*/
+  -webkit-animation: roll 2s;
+}
+.slider {
+  height: 48px;
+  width: 48px;
+  background-image: url(erik-rock.gif);
+  position:absolute;
+  -webkit-animation: slide 3s infinite;
+}
+
+.lineUpLeft {
+  position: static left;
+}
