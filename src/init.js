@@ -32,8 +32,8 @@ $(document).ready(function(){
   window.dancers.push(dancer);
   $('.lineUp').on('click', function() {
     for(var i = 0; i < dancers.length; i++) {
-      $(dancers[i]).addClass("lineUpLeft")
-      console.log(dancers[i])
+      var top = $(dancers[i]).css('top');
+      dancers[i].setPosition(top, 0);
     }
   });
 
