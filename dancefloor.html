@@ -3,14 +3,23 @@
   <head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
+    <script src="src/spinningDancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/slidingDancer.js"></script>
+    <script src="src/imTheJuggernaut.js"></script>
   </head>
   <body>
     <div class="topbar">
+      <a href="#" class='lineUp'>Line em Up</a>
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="spinningDancer">Add Lisa Simpson</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add E. Blinky</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="slidingDancer">Add a gnar viking</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="juggernaut">HYPEMAN</a>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>
