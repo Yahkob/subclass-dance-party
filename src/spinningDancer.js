@@ -1,6 +1,6 @@
 var spinningDancer = function(top, left, timeBetweenSteps) {
     Dancer.call(this, top, left, timeBetweenSteps);
-    this.$node = $('<span class="spinner"></span>');
+    this.$node = $('<span class="dancer spinner"></span>');
     this.setPosition(top,left);
 };
 spinningDancer.prototype = Object.create(Dancer.prototype);

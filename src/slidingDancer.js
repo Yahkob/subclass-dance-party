@@ -1,6 +1,6 @@
 var slidingDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="slider"></span>');
+  this.$node = $('<span class="dancer slider"></span>');
   this.setPosition(top,left);
 };
 slidingDancer.prototype = Object.create(Dancer.prototype);
